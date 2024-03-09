@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  body {
+	background-color: #0f0f52;
+	color: #ffffff;
+  }
+  
+  .poppins-light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 550;
+	font-style: normal;
+  }
+  
+  .left {
+	font-size: 27px;
+  }
+  nav {
+	font-size: 20px;
+	font-weight: 550;
+	height: 100px;
+	background-color: #15156b;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  }
+  
+  nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  nav ul li {
+	list-style: none;
+	margin: 0 20px 0 20px;
+  }
+  
+  .firstSection {
+	/* border: 4px solid aqua; */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 110px 0;
+  }
+  .firstSection > div {
+	width: 30%;
+	/* background-color: coral; */
+  }
+  .leftSection {
+	font-size: 2.2rem;
+  }
+  
+  .rightSection img {
+	/* border: 4px solid aqua; */
+	width: 125%;
+  }
+  
+  .pink {
+	color: #b96bdd;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: white;
+  }
+  nav ul li a:hover {
+	color: #bcbcf7;
+	font-size: 1.05rem;
+	transition: 0.4s;
+  }
+  
+  #element {
+	color: #b96bdd;
+  }
+  
+  main hr{
+	border: 0;
+	background-color: #beee0f ;
+	height: 1.2px;
+	margin: 35px 84px;
+	position: relative;
+	top: -60px;
+  }
+  
+  
+  .secondSection{
+	height: 80vh;
+	/* border: 4px solid yellow; */
+  }
+  
+  .secondSection h1{
+	font-size: 1.9rem;
+	margin: 0 140px;
+  }
+  
+  .text-gray{
+	color: #808080;
+	margin: 0 140px;
+  }
+  
+  .secondSection .box{
+	background: #ffffff;
+	width: 80vw;
+	height: 2px;
+	margin: 95px auto;
+	display: flex;
+	
+  }
+  
+  .secondSection .vertical{
+	height: 93px;
+	width: 1px;
+	background-color: #ffffff;
+	margin: 0 130px;
+  }
+  
+  .image-top{
+	width: 35px;
+	position: relative;
+	/* relative, which means the element is positioned relative to its normal position in the document flow. */
+	top: -42px;
+	left: -9px;
+  }
+  .vertical-title{
+	font-size: 16px;
+	position: relative;
+	top: 57px;
+	width: 150px;
+  }
+  .vertical-description{
+	position: relative;
+	font-size: 10px;
+	color: gray;
+	width: 150px;
+	top: 70px;
+  }
+  
+  footer{
+	height: 200px;
+	background-color: #112355;
+  }
+  
+  footer .footer_first{
+	font-weight: 550;
+	font-size: 20px;
+	font-style: italic;
+  }
+  .footer{
+	display: flex;
+	padding: 50px 122px;
+	justify-content: space-evenly;
+	text-align: center;
+  }
+  
+  .footer ul{
+	list-style: none;
+  }
+  
+  .footer>div{
+	width: 100px;
+  }
+  
+  footer .footer-rights{
+	color: gray;
+	text-align: center;
+  }
+  
+  .leftSection .btn{
+	padding: 10px 10px;
+	border-radius: 4px;
+	background-color: #5e187e;
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	/* box-shadow: -5px 5px 8px .1px rgba(119, 115, 119, 0.7) */
+	box-shadow: 5px 5px 5px -0.1px rgba(219, 219, 236, 0.2);
+  }
+  
+  .leftSection .buttons{
+	margin-top: 30px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
