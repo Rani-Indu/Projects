@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>This is a Media Query demo page.</h1>
+    <p class="screen-size">Loading screen size...</p>
+  </div>
+  <script>
+    const screenSizeElement = document.querySelector('.screen-size');
+
+    function updateScreenSize() {
+      const width = window.innerWidth;
+      screenSizeElement.textContent = `Screen size: ${width}px`;
+    }
+
+    // Update on initial load and screen resize
+    updateScreenSize();
+    window.addEventListener('resize', updateScreenSize);
+  </script>
+</body>
+</html>

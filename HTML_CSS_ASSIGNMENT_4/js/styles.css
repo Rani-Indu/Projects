@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styles (default layout) */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #98fb98; /* Light green */
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  .container .screen-size {
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  /* For screens 1440px and above */
+  @media (min-width: 1440px) {
+    body {
+      background-color: #008000;
+    }
+  
+    .container {
+      background-color: #228b22;
+    }
+  }
+  
+  /* For screens between 1024px and 1439px */
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    body {
+      background-color: #e0b444;
+    }
+  }
+  
+  /* For screens 425px and below */
+  @media (max-width: 425px) {
+    body {
+      background-color: #e72344;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .container h1 {
+      font-size: 1.5rem;
+    }
+  }
+  

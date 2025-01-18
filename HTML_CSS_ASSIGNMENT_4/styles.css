@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles (default layout) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+  background-color: #98fb98; /* Light green */
+}
+.container {
+  text-align: center;
+  /* padding: 20px; */
+  /* border-radius: 20px; */
+  /* background-color: #aaf0d1;  */
+  /* Light cyan */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #000;
+}
+
+.container .screen-size {
+  font-size: 1rem;
+  color: #000;
+}
+
+/* For screens 1440px and above */
+@media (min-width: 1440px) {
+  body {
+    background-color: #008000;
+  }
+
+  .container {
+    background-color: #228b22;
+    /* border: 2px solid blueviolet; */
+  }
+
+  .container .screen-size::before {
+    content: "Screen size: 1440px";
+    font-size: 1.2rem;
+  }
+}
+
+/* For screens between 1024px and 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    background-color: #e0b444;
+  }
+
+  .container .screen-size::before {
+    content: "Screen size: 1024px";
+    font-size: 1.2rem;
+  }
+}
+
+/* For screens 425px and below */
+@media (max-width: 425px) {
+  body {
+    background-color: #e72344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container .screen-size::before {
+    content: "Screen size: 425px";
+    font-size: 1rem;
+  }
+}
