@@ -58,3 +58,25 @@ const myCar = new Car("Toyota", "Corolla", 2021);
 
 // Calling the getDescription method
 console.log(myCar.getDescription());
+
+
+
+//  4. Employee Class Challenge.
+
+class Employee {
+    constructor(name, position, salary) {
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
+    }
+
+    getSalary() {
+        return this.salary;
+    }
+}
+
+// Creating an instance of the Employee class
+const employee = new Employee("Indu Rani", "Fullstack Developer", 90000);
+
+// Calling the getSalary method
+console.log(employee.getSalary());
