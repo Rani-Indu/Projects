@@ -188,3 +188,28 @@ const checker = numberChecker([1, 2, 3, 4, 5]);
 
 console.log(checker(3)); 
 console.log(checker(6)); 
+
+
+
+
+// 10. Filter by Category.
+function productFilter(products) {
+    return function(category) {
+        return products.filter(product => product.category === category);
+    };
+}
+
+// Example usage
+const products = [
+    { name: 'Laptop', category: 'Electronics' },
+    { name: 'Shirt', category: 'Clothing' },
+    { name: 'Phone', category: 'Electronics' },
+    { name: 'Shoes', category: 'Clothing' },
+    { name: 'Watch', category: 'Accessories' }
+];
+
+const filterByCategory = productFilter(products);
+
+console.log(filterByCategory('Electronics'));
+
+console.log(filterByCategory('Clothing'));
