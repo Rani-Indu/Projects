@@ -123,7 +123,5 @@ const person = {
     },
 };
 
-// Example usage
 const output = extractNameAndStreet(person);
-console.log(output); // Output: { name: 'Mithun', street: 'B8, Block B, Industrial Area.' }
-
+console.log(output); 
