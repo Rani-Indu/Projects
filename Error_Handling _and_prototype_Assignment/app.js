@@ -80,3 +80,26 @@ const employee = new Employee("Indu Rani", "Fullstack Developer", 90000);
 
 // Calling the getSalary method
 console.log(employee.getSalary());
+
+
+
+// 5. Implementing a Person Class with Default Values
+class Person {
+    constructor(name = "Unknown", age = 0) {
+        this.name = name;
+        this.age = age;
+    }
+
+    getDetails() {
+        return `Name: ${this.name}, Age: ${this.age}`;
+    }
+}
+
+// Creating instances of the Person class
+const person1 = new Person();
+const person2 = new Person("Alice", 25);
+
+// Calling the getDetails method
+console.log(person1.getDetails()); // Output: Name: Unknown, Age: 0
+console.log(person2.getDetails()); // Output: Name: Alice, Age: 25
+
