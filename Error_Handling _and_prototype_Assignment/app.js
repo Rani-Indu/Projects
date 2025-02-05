@@ -38,3 +38,23 @@ console.log(getPerson({ name: "Sang Zhi", age: 22 }));
 console.log(getPerson({ name: "Sang Zhi" })); 
 console.log(getPerson(["name", "Sang Zhi"]));  
 
+
+
+// 3. Car Description Class.
+class Car {
+    constructor(company, model, year) {
+        this.company = company;
+        this.model = model;
+        this.year = year;
+    }
+
+    getDescription() {
+        return `This is a ${this.year} ${this.company} ${this.model}`;
+    }
+}
+
+// Creating an instance of the Car class
+const myCar = new Car("Toyota", "Corolla", 2021);
+
+// Calling the getDescription method
+console.log(myCar.getDescription());
