@@ -103,3 +103,15 @@ const person2 = new Person("Alice", 25);
 console.log(person1.getDetails()); // Output: Name: Unknown, Age: 0
 console.log(person2.getDetails()); // Output: Name: Alice, Age: 25
 
+
+
+// 6. Using Static Method to Add Two Numbers with Calculator Class
+class Calculator {
+    static add(a, b) {
+        return a + b;
+    }
+}
+
+// Calling the add method without instantiating the Calculator class
+const sum = Calculator.add(5, 3);
+console.log(sum); // Output: 8
