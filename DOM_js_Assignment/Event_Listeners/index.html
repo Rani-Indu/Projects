@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Onclick -->
+    <div class="project">
+      <h3>Button Click Counter</h3>
+      <button id="clickBtn">Click Me!</button>
+      <p>Clicked: <span id="clickCount">0</span> times</p>
+    </div>
+
+    <br />
+    <!--  Doubleclick -->
+    <div class="project">
+      <h3>Double Click Color Change</h3>
+      <div id="colorBox" class="color-box">Double Click Me!</div>
+    </div>
+    <br />
+    <!--  onMouseOver & onMouseOut  -->
+    <div class="project">
+      <h3>Image Hover Effect</h3>
+      <img id="hoverImg" src="./Assets/Tulip.jpg" width="100" />
+    </div>
+
+    <br />
+    <!-- onKeyPress -->
+    <div class="project">
+      <h3>Live Key Press Display</h3>
+      <input type="text" id="keypressInput" placeholder="Type something..." />
+      <p>Last Key Pressed: <span id="keyPressed"></span></p>
+    </div>
+    <br>
+    <!-- keydown-keyup  -->
+    <div class="project">
+        <h3>Key Down & Key Up Indicator</h3>
+        <div id="keyBox" class="key-box">Press Any Key</div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
