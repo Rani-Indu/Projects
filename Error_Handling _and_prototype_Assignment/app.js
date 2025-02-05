@@ -153,3 +153,22 @@ user.password = 'NewPass123';
 // Getting the updated password (masked with asterisks)
 console.log(user.password); 
 
+
+
+
+//  8. Adding a Method to a Prototype.
+// Creating the prototype object
+function Student(name) {
+    this.name = name;
+}
+
+// Adding the printDetails method to the Student prototype
+Student.prototype.printDetails = function() {
+    console.log(`Hello, my name is ${this.name}`);
+};
+
+// Instantiating a Student object with the name "Mithun"
+const student = new Student("Indu");
+
+// Calling the printDetails method
+student.printDetails(); // 
