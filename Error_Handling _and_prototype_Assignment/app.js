@@ -171,4 +171,20 @@ Student.prototype.printDetails = function() {
 const student = new Student("Indu");
 
 // Calling the printDetails method
-student.printDetails(); // 
+student.printDetails();
+
+
+
+
+//  9. Check the presence using closures.
+function numberChecker(arr) {
+    return function(num) {
+        return arr.includes(num);
+    };
+}
+
+// Example usage
+const checker = numberChecker([1, 2, 3, 4, 5]);
+
+console.log(checker(3)); 
+console.log(checker(6)); 
