@@ -115,3 +115,41 @@ class Calculator {
 // Calling the add method without instantiating the Calculator class
 const sum = Calculator.add(5, 3);
 console.log(sum); // Output: 8
+
+
+// 7. Password Checker.
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this._password = password;
+    }
+
+    get password() {
+        return '*'.repeat(this._password.length);
+    }
+
+    set password(newPassword) {
+        const hasUpperCase = /[A-Z]/.test(newPassword);
+        const hasNumber = /[0-9]/.test(newPassword);
+        const isValidLength = newPassword.length >= 8;
+
+        if (isValidLength && hasUpperCase && hasNumber) {
+            this._password = newPassword;
+        } else {
+            console.error('Password must be at least 8 characters long and contain at least one number and one uppercase letter.');
+        }
+    }
+}
+
+// Creating an instance of the User class
+const user = new User('indu_rani', 'Password1');
+
+// Getting the password (masked with asterisks)
+console.log(user.password); 
+
+// Setting a new password
+user.password = 'NewPass123';
+
+// Getting the updated password (masked with asterisks)
+console.log(user.password); 
+
